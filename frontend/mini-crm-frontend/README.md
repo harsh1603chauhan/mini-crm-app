@@ -1,6 +1,97 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mini CRM App
+A lightweight Customer Relationship Management system designed to streamline customer data, tasks, and communication. Built with a modern tech stack and integrated AI tools to enhance productivity and decision-making.
+
+🚀 Features
+Contact and lead management
+
+Task tracking and assignment
+
+Email templates and automation
+
+AI-based lead prioritization
+
+JWT-based authentication
+
+Role-based access control
+
+🛠️ Local Setup Instructions
+🔧 Prerequisites
+Node.js >= 16
+
+MongoDB (local or cloud like Atlas)
+
+Vercel CLI (if testing frontend deployment locally)
+
+📁 Folder Structure
+bash
+Copy
+Edit
+mini-crm-app/
+├── backend/            # Express API
+├── frontend/           # React/Vite/Next.js client
+🔙 Backend Setup
+bash
+Copy
+Edit
+cd backend
+npm install
+# Create a .env file with:
+# MONGO_URI=<your_mongodb_uri>
+# JWT_SECRET=<your_secret>
+npm start
+🌐 Frontend Setup
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm run dev
+🧠 Architecture Diagram
+plaintext
+Copy
+Edit
+                    ┌────────────────────┐
+                    │     Frontend       │
+                    │  (React / Vite)    │
+                    └────────┬───────────┘
+                             │
+                             ▼
+                    ┌────────────────────┐
+                    │     Backend        │
+                    │  (Node.js / Express)│
+                    └────────┬───────────┘
+                             │
+                             ▼
+                    ┌────────────────────┐
+                    │     Database       │
+                    │   (MongoDB Atlas)  │
+                    └────────────────────┘
+🤖 AI Tools & Tech Stack
+Tool	Purpose
+OpenAI GPT	For lead scoring, intelligent auto-replies
+Langchain	(Optional) Task automation and prompt management
+Node.js / Express	REST API and backend logic
+MongoDB	Database to store leads, users, and tasks
+React (Vite/CRA)	Frontend UI
+JWT	Authentication
+Vercel	Frontend deployment
+Render / Railway	(Optional) Backend hosting
+
+⚠️ Known Limitations / Assumptions
+AI-based lead scoring is basic and may require fine-tuning.
+
+.env files must not be pushed to GitHub (secrets are detected and blocked).
+
+Admin/User roles are hardcoded; role management panel is under development.
+
+Assumes MongoDB Atlas is used; local instance may require tweaks.
+
+Email features may require Mailgun or SendGrid API keys.
+
+📬 Contact
+Email-harshchauhan16032004@gmail.com
 
 ## Available Scripts
 
